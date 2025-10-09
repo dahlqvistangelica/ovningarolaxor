@@ -1,4 +1,6 @@
-﻿namespace Lektion9_laxa
+﻿using System.Threading.Channels;
+
+namespace Lektion9_laxa
 {
     internal class Program
     {
@@ -89,6 +91,25 @@
             }
         }
         #endregion
+        #region Fråga 6 inkorrekt
+        public class BadExample
+        {
+            private ExampleLocked _locked = new ExampleLocked();
+            public void OrderLocked(string order)
+            {
+                _locked.Locked(order);
+            }
+            
+        }
+        public class ExampleLocked
+        {
+            public void Locked(string data) => ChannelWriter($"This is locked {data}");
+        }
+        #endregion
+        #region Fråga 6 korrekt
+        #endregion
+        #region
+
         #region Fråga 9 exempel på inkapsling och abstraktion.
         public class SaveMyMoney
         {
