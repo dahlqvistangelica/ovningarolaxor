@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
             
-        {   //Övning 2 - programkod int.
+        {   /*
+            //Övning 2 - programkod int.
             var intStorage = new Storage<int>();
             Console.WriteLine(intStorage.IsEmpty());
             intStorage.Store(32);
@@ -43,8 +44,24 @@
             Airplane airplane = new Airplane();
             FlyingSwimmer(duck);
             FlyingSwimmer(airplane);
-            //FlyingSwimmer(fish); kastar error.
-            
+            //FlyingSwimmer(fish); kastar error.*/
+            HashSet<string> postnr = new HashSet<string>();
+            postnr.Add("11122");
+            postnr.Add("41301");
+            postnr.Add("21115");
+            postnr.Add("11122");
+            postnr.Add("75321");
+            postnr.Add("41301");
+            Console.WriteLine(postnr.Contains("11122"));
+            Console.WriteLine(postnr.Contains("90210"));
+            Console.WriteLine(postnr.Remove("21115"));
+            List<string> nyaLeveranser = new List<string> { "11122", "55555", "75321", "99999", "41301" };
+            postnr.UnionWith(nyaLeveranser);
+            foreach(var nr in postnr)
+            {
+                Console.Write(nr + " ");
+            }
+                
         }
         #region Övning 6
         public interface IFlyable
