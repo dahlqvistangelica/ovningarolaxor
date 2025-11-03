@@ -9,6 +9,10 @@ namespace Lektion13
 
         static void Main(string[] args)
         {
+            DateTime object1 = new DateTime(2024, 12, 04);
+            DateTime object2 = new DateTime(2025, 12, 05);
+            TimeSpan timeSpan = object2 - object1;
+            Console.WriteLine(timeSpan.Days);
             Random random = new Random();
             #region Övning 1
             
