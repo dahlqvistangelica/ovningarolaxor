@@ -28,7 +28,9 @@ namespace Lektion13
             #endregion
 
             #region Övning 2
-
+            Console.Write("Ange tid (HH:MM): ");
+            string inputTime = Console.ReadLine();
+            TimeOnly.TryParse(inputTime out TimeOnly result);/*
             Console.Write("Ange ditt födelsedatum (yyyy-mm-dd): ");
             string inputBirthDate = Console.ReadLine();
             DateTime today = DateTime.Now;
@@ -105,7 +107,7 @@ namespace Lektion13
             Console.Write($"Övertid: {overTime.ToString("h' timmar 'm' minuter.'")}");
             Console.WriteLine($" ({totalOverPay:C})");
             Console.WriteLine($"Total lön: {totalPay:C}");
-            #endregion
+            #endregion*/
 
         }
 

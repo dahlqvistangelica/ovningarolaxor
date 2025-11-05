@@ -1,4 +1,4 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿
 
 namespace Lektion15
 {
@@ -27,6 +27,7 @@ namespace Lektion15
             {
                 Console.WriteLine(ex.Message);
             }
+            //Uppgift 12
             try
             {
                 string siffror = "123";
@@ -39,6 +40,7 @@ namespace Lektion15
                 Console.WriteLine("Kan inte konvertera bokstäver");
                 Console.WriteLine(ex.Message);
             }
+            //Uppgift 14
             try
             {
                 Console.WriteLine("Det här är en try, här provar man.");
@@ -52,18 +54,47 @@ namespace Lektion15
             {
                 Console.WriteLine("Den här skrivs alltid ut.");
             }
+            //Uppgift 16 & 18
             try
             {
-
+                int text = int.Parse("abc");
+                int division = 10/0
             }
             catch(FormatException ex)
             {
-
+                Console.WriteLine("Man kan inte parsa bokstäver.");
+                Console.WriteLine(ex.Message);
             }
             catch(DivideByZeroException ex)
-            { }
+            { Console.WriteLine("Du kan fortfarande inte dela med noll...");
+                Console.WriteLine(ex.Message);
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Den här fångar alla exceptions för den är generell.");
+                Console.WriteLine(ex.Message);
+            }
+            //Uppgift 20.
+            try
+            {
+                Console.WriteLine("Den här provningen har ingen catch...");
+            }
+            finally
+            {
+                Console.WriteLine("Så den kunde jag inte lägga något fel i eftersom då startade inte programmet..");
+            }
 
-             
+            //TryParse
+            int.TryParse("123", out int enkelt);
+            double.TryParse("32,32", out double dubbel);
+            bool.TryParse("true" out bool sant);
+            float.TryParse("320.32", out float flytande);
+            long.TryParse("435430011", out long långtresultat);
+            Console.WriteLine(enkelt);
+            Console.WriteLine(dubbel);
+            Console.WriteLine(sant);
+            Console.WriteLine(flytande);
+            Console.WriteLine(långtresultat);
         }
         //DivideByZeroException
         public static int IntDivide(int täljare, int nämnare)
