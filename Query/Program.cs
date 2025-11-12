@@ -31,6 +31,18 @@ class Program
 
     static void Main(string[] args)
     {
+        int[] numbers = { 1, 3, 6, 8, 2, 9, 4 };
+        string[] names = { "Anna", "Elsa", "Lilly", "Anders", "Angelica", "Staffan" };
+        var numberbig5 = numbers.Select(n => (n > 5));
+        //var result = names.Where(n => n.Length > 4).OrderBy(n => n);
+        var result = from n in names
+                     where n.StartsWith('A')
+                     orderby n ascending
+                     select n;
+        foreach(var namn in result)
+        {
+            Console.WriteLine(namn);
+        }
         InitializeData();
         #region Övning 1-3
         //Övning 1: Lista alla produkter i kategorin "Verktyg".
