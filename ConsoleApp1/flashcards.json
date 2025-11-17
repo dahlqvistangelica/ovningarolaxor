@@ -1,0 +1,382 @@
+﻿[
+  {
+    "fråga": "Vad gör Console.Write() jämfört med Console.WriteLine()?",
+    "rätt_svar": "Console.Write() skriver utan ny rad, Console.WriteLine() lägger till ny rad"
+  },
+  {
+    "fråga": "Vad händer om du försöker använda en variabel utan att ge den ett värde?",
+    "rätt_svar": "Du får ett kompileringsfel eftersom variabeln inte är initierad"
+  },
+  {
+    "fråga": "Vad är indexet för det första elementet i en array i C#?",
+    "rätt_svar": "Index 0"
+  },
+  {
+    "fråga": "Vilken typ används för text i C#?",
+    "rätt_svar": "string"
+  },
+  {
+    "fråga": "Vad händer om du försöker komma åt ett index utanför arrayens gränser?",
+    "rätt_svar": "En IndexOutOfRangeException kastas"
+  },
+  {
+    "fråga": "Vilken metod är programmets startpunkt i C#?",
+    "rätt_svar": "Main()"
+  },
+  {
+    "fråga": "Hur skapar du en array med plats för 10 heltal?",
+    "rätt_svar": "int[] tal = new int[10];"
+  },
+  {
+    "fråga": "Hur tar du reda på hur många element en array innehåller?",
+    "rätt_svar": "array.Length"
+  },
+  {
+    "fråga": "Vad händer om du försöker läsa in ett heltal men matar in text?",
+    "rätt_svar": "En FormatException kastas"
+  },
+  {
+    "fråga": "Vad händer om du inte anger return i en metod som ska returnera ett värde?",
+    "rätt_svar": "Kompileringsfel"
+  },
+  {
+    "fråga": "Vad är skillnaden mellan implicit och explicit typkonvertering?",
+    "rätt_svar": "Implicit sker automatiskt, explicit kräver manuell konvertering"
+  },
+  {
+    "fråga": "Vilken metod används för att konvertera en sträng till int?",
+    "rätt_svar": "int.Parse()"
+  },
+  {
+    "fråga": "Vad returnerar int.TryParse(\"123\", out int tal)?",
+    "rätt_svar": "true och sätter tal till 123"
+  },
+  {
+    "fråga": "Vilken exception kastas om du kör int.Parse(\"abc\")?",
+    "rätt_svar": "FormatException"
+  },
+  {
+    "fråga": "Vilken decimalavgränsare används i Sverige?",
+    "rätt_svar": "Komma (,)"
+  },
+  {
+    "fråga": "Varför är TryParse säkrare än Parse?",
+    "rätt_svar": "TryParse kraschar inte utan returnerar false vid fel"
+  },
+  {
+    "fråga": "Hur konverterar du strängen \"456\" till ett heltal?",
+    "rätt_svar": "int.Parse(\"456\");"
+  },
+  {
+    "fråga": "Vilken typ returnerar int.TryParse()?",
+    "rätt_svar": "bool"
+  },
+  {
+    "fråga": "Vilken metod används för att konvertera double till int?",
+    "rätt_svar": "(int)d"
+  },
+  {
+    "fråga": "Vad gör Convert.ToInt32(\"123\")?",
+    "rätt_svar": "Konverterar strängen till heltal 123"
+  },
+  {
+    "fråga": "Vad skrivs ut av if (x > 10 && y < 25 || x == 15)?",
+    "rätt_svar": "\"Första villkoret\""
+  },
+  {
+    "fråga": "Vad är skillnaden mellan ++i och i++?",
+    "rätt_svar": "++i ökar först, i++ ökar efteråt"
+  },
+  {
+    "fråga": "Vilken årstid skrivs ut om month = 7 i en switch-sats?",
+    "rätt_svar": "Sommar"
+  },
+  {
+    "fråga": "Vad gör Math.Ceiling(7.8)?",
+    "rätt_svar": "Rundar upp till 8"
+  },
+  {
+    "fråga": "Vad är skillnaden mellan & och &&?",
+    "rätt_svar": "& utvärderar båda sidor alltid, && kan kortsluta"
+  },
+  {
+    "fråga": "Vad gör Math.Sqrt(25)?",
+    "rätt_svar": "Returnerar 5"
+  },
+  {
+    "fråga": "Vad returnerar Math.Pow(2,8)?",
+    "rätt_svar": "256"
+  },
+  {
+    "fråga": "Vad gör Math.Abs(-15)?",
+    "rätt_svar": "Returnerar 15"
+  },
+  {
+    "fråga": "Vad händer om du glömmer break i en switch?",
+    "rätt_svar": "Fall-through – nästa case körs också"
+  },
+  {
+    "fråga": "Vad gör operatorn ?: i C#?",
+    "rätt_svar": "Ternary operator – kort if/else"
+  },
+  {
+    "fråga": "Vad betyder de tre delarna i en for-loop?",
+    "rätt_svar": "Initiering, villkor och uppdatering"
+  },
+  {
+    "fråga": "Hur skiljer sig while från do-while?",
+    "rätt_svar": "while testar före, do-while efter"
+  },
+  {
+    "fråga": "Hur undviker man oändliga loopar?",
+    "rätt_svar": "Genom att se till att villkoret blir falskt"
+  },
+  {
+    "fråga": "Vilken loop används om man alltid vill köra minst en gång?",
+    "rätt_svar": "do-while"
+  },
+  {
+    "fråga": "Vad händer om du skriver i <= array.Length?",
+    "rätt_svar": "IndexOutOfRangeException"
+  },
+  {
+    "fråga": "Vad står DRY för?",
+    "rätt_svar": "Don't Repeat Yourself"
+  },
+  {
+    "fråga": "Hur deklarerar du en array med fem heltal?",
+    "rätt_svar": "int[] array = new int[5];"
+  },
+  {
+    "fråga": "Vilket index har första elementet i en array?",
+    "rätt_svar": "0"
+  },
+  {
+    "fråga": "Hur får du längden på en array?",
+    "rätt_svar": "array.Length"
+  },
+  {
+    "fråga": "Vad händer om du når index utanför arrayens storlek?",
+    "rätt_svar": "IndexOutOfRangeException"
+  },
+  {
+    "fråga": "Vilket nyckelord används för metod utan returvärde?",
+    "rätt_svar": "void"
+  },
+  {
+    "fråga": "Hur loopar du igenom en array?",
+    "rätt_svar": "for eller foreach"
+  },
+  {
+    "fråga": "Vad är skillnaden mellan int[] arr = {1,2,3} och new int[3]?",
+    "rätt_svar": "Första har värden, andra är tom med nollor"
+  },
+  {
+    "fråga": "Hur skapar du en 2D-array med 3x4 element?",
+    "rätt_svar": "int[,] matrix = new int[3,4];"
+  },
+  {
+    "fråga": "Hur skriver du ut sista elementet i arrayen numbers?",
+    "rätt_svar": "numbers[numbers.Length - 1]"
+  },
+  {
+    "fråga": "Vad är skillnaden mellan Stack och Heap?",
+    "rätt_svar": "Stack lagrar värdetyper, Heap lagrar referenstyper"
+  },
+  {
+    "fråga": "Vad händer om du kopierar en värdetyp till en annan?",
+    "rätt_svar": "En kopia av värdet skapas"
+  },
+  {
+    "fråga": "Vad händer om du kopierar en referenstyp?",
+    "rätt_svar": "Båda pekar på samma objekt"
+  },
+  {
+    "fråga": "Vad är string för typ?",
+    "rätt_svar": "Referenstyp (immutable)"
+  },
+  {
+    "fråga": "Vad händer om en array är null och du försöker använda den?",
+    "rätt_svar": "NullReferenceException"
+  },
+  {
+    "fråga": "Vad gör Garbage Collector?",
+    "rätt_svar": "Frigör oanvänt minne automatiskt"
+  },
+  {
+    "fråga": "Vilket minne används för lokala variabler?",
+    "rätt_svar": "Stack"
+  },
+  {
+    "fråga": "Vilket minne används för objekt?",
+    "rätt_svar": "Heap"
+  },
+  {
+    "fråga": "Vad händer med Stack när en metod avslutas?",
+    "rätt_svar": "Stacken rensas automatiskt"
+  },
+  {
+    "fråga": "Vad står LIFO för?",
+    "rätt_svar": "Last In, First Out"
+  },
+  {
+    "fråga": "Vad är skillnaden mellan klass och objekt?",
+    "rätt_svar": "Klass är mall, objekt är instans"
+  },
+  {
+    "fråga": "Vilket nyckelord används för att skapa en klass?",
+    "rätt_svar": "class"
+  },
+  {
+    "fråga": "Vad händer om du försöker nå en privat egenskap utifrån?",
+    "rätt_svar": "Kompileringsfel"
+  },
+  {
+    "fråga": "Vad används get och set till?",
+    "rätt_svar": "För att läsa och skriva egenskaper"
+  },
+  {
+    "fråga": "Vilket värde får första elementet i en enum?",
+    "rätt_svar": "0"
+  },
+  {
+    "fråga": "Vad betyder public?",
+    "rätt_svar": "Tillgänglig överallt"
+  },
+  {
+    "fråga": "Hur gör du en property som bara kan skrivas inifrån klassen?",
+    "rätt_svar": "public string Namn { get; private set; }"
+  },
+  {
+    "fråga": "Vad betyder encapsulation?",
+    "rätt_svar": "Att dölja interna detaljer"
+  },
+  {
+    "fråga": "Vad är skillnaden mellan field och property?",
+    "rätt_svar": "Field är variabel, property har get/set"
+  },
+  {
+    "fråga": "Vad returnerar (int)Storlek.Medium om enum börjar på 0?",
+    "rätt_svar": "1"
+  },
+  {
+    "fråga": "Vad är skillnaden mellan static och instans-fält?",
+    "rätt_svar": "Static delas av alla objekt, instans är unik"
+  },
+  {
+    "fråga": "Kan en static metod nå instansdata?",
+    "rätt_svar": "Nej"
+  },
+  {
+    "fråga": "Vad händer om du försöker använda en static class med new?",
+    "rätt_svar": "Kompileringsfel"
+  },
+  {
+    "fråga": "Vilken operator används för nullkontroll?",
+    "rätt_svar": "?. (null conditional)"
+  },
+  {
+    "fråga": "Vilken operator används för standardvärde om null?",
+    "rätt_svar": "??"
+  },
+  {
+    "fråga": "Vad gör en static constructor?",
+    "rätt_svar": "Körs en gång innan klassen används"
+  },
+  {
+    "fråga": "Vad händer om du anropar en metod på null?",
+    "rätt_svar": "NullReferenceException"
+  },
+  {
+    "fråga": "Vad gör GetValueOrDefault() på nullable?",
+    "rätt_svar": "Returnerar värdet eller standard om null"
+  },
+  {
+    "fråga": "Vad händer med static data under programmets livstid?",
+    "rätt_svar": "Finns kvar tills programmet avslutas"
+  },
+  {
+    "fråga": "Vad används static klasser till?",
+    "rätt_svar": "Hjälpklasser som Math, utan behov av instans"
+  },
+  {
+    "fråga": "Vad står SOLID för?",
+    "rätt_svar": "Single Responsibility, Open/Closed, Liskov, Interface Segregation, Dependency Inversion"
+  },
+  {
+    "fråga": "Vad betyder Single Responsibility?",
+    "rätt_svar": "En klass ska bara ha ett ansvar"
+  },
+  {
+    "fråga": "Vad betyder Open/Closed Principle?",
+    "rätt_svar": "Öppen för utökning, stängd för ändring"
+  },
+  {
+    "fråga": "Vad betyder Liskov Substitution Principle?",
+    "rätt_svar": "Underklasser ska kunna ersätta basklasser utan problem"
+  },
+  {
+    "fråga": "Vad betyder Interface Segregation?",
+    "rätt_svar": "Interfaces ska inte tvinga klasser att implementera onödiga metoder"
+  },
+  {
+    "fråga": "Vad betyder Dependency Inversion?",
+    "rätt_svar": "Bero på abstraktioner, inte konkreta implementationer"
+  },
+  {
+    "fråga": "Vilka är OOP:s fyra grundprinciper?",
+    "rätt_svar": "Inkapsling, Arv, Polymorfism, Abstraktion"
+  },
+  {
+    "fråga": "Vad är polymorfism?",
+    "rätt_svar": "Samma interface kan ha olika implementationer"
+  },
+  {
+    "fråga": "Vad betyder inkapsling?",
+    "rätt_svar": "Skydda interna data via egenskaper"
+  },
+  {
+    "fråga": "Vad är abstraktion?",
+    "rätt_svar": "Att fokusera på vad objekt gör, inte hur"
+  },
+  {
+    "fråga": "Vad är skillnaden mellan struct och class?",
+    "rätt_svar": "Struct är värdetyp, class är referenstyp"
+  },
+  {
+    "fråga": "Kan en struct ärva från en annan struct?",
+    "rätt_svar": "Nej"
+  },
+  {
+    "fråga": "Hur deklarerar du en struct med X och Y?",
+    "rätt_svar": "public struct Point { public int X; public int Y; }"
+  },
+  {
+    "fråga": "Vad händer när du kopierar en struct?",
+    "rätt_svar": "En oberoende kopia skapas"
+  },
+  {
+    "fråga": "Hur skapar du en record med Make, Model och Year?",
+    "rätt_svar": "public record Car(string Make, string Model, int Year);"
+  },
+  {
+    "fråga": "Vad är ett with-uttryck?",
+    "rätt_svar": "Skapar en ny record med ändrade värden"
+  },
+  {
+    "fråga": "Hur dekonstruerar du en record?",
+    "rätt_svar": "var (name, age) = person;"
+  },
+  {
+    "fråga": "Vad returnerar ToString() för en record?",
+    "rätt_svar": "Ex. Student { Name = Erik, Grade = 85 }"
+  },
+  {
+    "fråga": "Vilken typ av properties har records som standard?",
+    "rätt_svar": "init (immutable)"
+  },
+  {
+    "fråga": "Vilken fördel har records över klasser?",
+    "rätt_svar": "Enkla, immutabla databehållare med jämförelse inbyggt"
+  }
+]
